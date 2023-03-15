@@ -11,6 +11,7 @@ import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
@@ -89,11 +90,10 @@ public class vistaPrincipalController implements Initializable {
             if (node instanceof TextField) {
                 ((TextField) node).clear();
             }
-
-            cbCiudadDestino.getSelectionModel().clearSelection();
-
         }
+        cbCiudadDestino.getSelectionModel().clearSelection();
          */
+
         //Limpiar datos
         tfNombre.setText("");
         cbCiudadDestino.getSelectionModel().clearSelection();
