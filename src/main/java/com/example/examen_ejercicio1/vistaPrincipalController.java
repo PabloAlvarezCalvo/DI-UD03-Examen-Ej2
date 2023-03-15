@@ -34,12 +34,12 @@ public class vistaPrincipalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        listaCiudades.add(new Ciudad("Madrid", "C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\images\\img1.jpg"));
-        listaCiudades.add(new Ciudad("Barcelona", "C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\images\\img2.jpg"));
-        listaCiudades.add(new Ciudad("Sevilla", "C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\images\\img3.jpg"));
-        listaCiudades.add(new Ciudad("Málaga", "C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\images\\img4.jpg"));
-        listaCiudades.add(new Ciudad("Valencia", "C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\images\\img5.jpg"));
-        listaCiudades.add(new Ciudad("Oporto", "C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\images\\img6.jpg"));
+        listaCiudades.add(new Ciudad("Madrid", getClass().getResource("images/img1.jpg").toExternalForm()));
+        listaCiudades.add(new Ciudad("Barcelona", getClass().getResource("images/img2.jpg").toExternalForm()));
+        listaCiudades.add(new Ciudad("Sevilla", getClass().getResource("images/img3.jpg").toExternalForm()));
+        listaCiudades.add(new Ciudad("Málaga", getClass().getResource("images/img4.jpg").toExternalForm()));
+        listaCiudades.add(new Ciudad("Valencia", getClass().getResource("images/img5.jpg").toExternalForm()));
+        listaCiudades.add(new Ciudad("Oporto", getClass().getResource("images/img6.jpg").toExternalForm()));
 
         lblTitulo.setStyle("titulo");
 
@@ -61,7 +61,7 @@ public class vistaPrincipalController implements Initializable {
     }
 
     @FXML private void btnAsignarEstiloOnClick(){
-        btnAsignarEstilo.getScene().getStylesheets().add("C:\\Users\\a21pabloac1\\Desktop\\DI-UD03-Examen\\examen_ejercicio1\\src\\main\\resources\\com\\example\\examen_ejercicio1\\css\\estilo.css");
+        btnAsignarEstilo.getScene().getStylesheets().add(getClass().getResource("css/estilo.css").toExternalForm());
     }
 
     @FXML private void btnLimpiarEstiloOnClick(){
