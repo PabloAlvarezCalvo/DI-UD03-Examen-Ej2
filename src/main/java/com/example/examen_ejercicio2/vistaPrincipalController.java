@@ -81,6 +81,19 @@ public class vistaPrincipalController implements Initializable {
     }
 
     @FXML private void btnCancelarOnClick(){
+        //Limpiar datos programatico
+        //No funciona o no se refleja en pantalla
+        /*
+        for (int i = 0; i < vbExtrasContainer.getChildren().size(); i++){
+            Node node = vbExtrasContainer.getChildren().get(i);
+            if (node instanceof TextField) {
+                ((TextField) node).clear();
+            }
+
+            cbCiudadDestino.getSelectionModel().clearSelection();
+
+        }
+         */
         //Limpiar datos
         tfNombre.setText("");
         cbCiudadDestino.getSelectionModel().clearSelection();
